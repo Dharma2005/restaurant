@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="hotel.css">
+    <img src="">
+    <style>
+      .menu-items{
+  display: inline-block;
+
+  width: 100%;
+  height:70PX;
+  
+  
+
+  
+}
+li{
+  display:inline;
+  padding:30px;
+}
+      .rt {
+        padding: 20px;
+      }
+      .er {
+        border-radius: 20%;
+        height: 300px;
+        width: 300px;
+        padding: 70px;
+        background: transparent;
+        transition: 0.5s;
+    
+      }
+      .dd{
+        border-radius: 20%;
+        height: 300px;
+        width: 300px;
+        padding: 25px;
+        background: transparent;
+        transition: 0.5s;
+    
+      }
+      .ff{
+        display:inline-block;
+        margin-top: 20%;
+      }
+      .rt {
+        display: inline-block;
+
+        background: transparent;
+        transition: 0.5s;
+        margin-top: 50%;
+      }
+      .er:hover {
+        background-color: grey;
+      }
+      #myvideo-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      #myvideo-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      #rooms {
+        margin-top: 10%; /* Adjust this value to change the space between the two videos */
+      }
+
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        margin: auto;
+      
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input,
+      select {
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 5px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+     button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        
+      }
+      .choose {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .OO {
+        padding:23px;
+  border :4px;
+  font-size:25px;
+  width:100px;
+  border-radius:10px;
+      }
+      
+      .OO:hover {
+        background-color: #3e8e41;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+      .df {
+        font-size: 60px;
+      }
+      #l{
+      
+        background-color: #ccc;
+        width: 100%;
+        height:100%;
+      }
+    
+      .GG{
+        display:flex;
+        padding: 20px;
+        margin-top: 0%;
+      }
+      .x1{
+        margin-left: 100PX;
+        margin-top: 0;
+        font-size: 20px;
+        color: black;
+        border: solid,red;
+        height:50px;
+        width:100px;
+        border-radius:10px;
+        background-color: yellow;
+    
+        padding: 2PX 2px;
+      }
+      .x2{
+        margin-left: 250PX;
+        margin-top: 0;
+        font-size: 20px;
+        color: black;
+        border: solid,red;
+        height:50px;
+        width:100px;
+        border-radius:10px;
+        background-color: yellow;
+        padding: 2PX 2px;
+
+      }
+      .x3{
+        margin-left: 280PX;
+        margin-top: 0;
+        font-size: 20px;
+        color: black;
+        border: solid,red;
+        height:50px;
+        width:100px;
+        border-radius:10px;
+        background-color: yellow;
+        padding: 2PX 2px;
+
+        
+      }
+      .x4{
+        margin-left: 220pX;
+    margin-top: 0;
+    font-size: 20px;
+    color: black;
+  background-color: yellow;
+   
+    height:50px;
+        width:100px;
+        border-radius:10px;
+    
+    padding: 2PX 2px;
+        
+      }
+      .PP{
+        display: inline-block;
+
+      }
+      .x11{
+        margin-left: 200px;
+        left:10px;
+        margin-top: 0%;
+      }
+      .x12{
+        margin-left: 300px;
+        left:10px;
+        margin-top: 0%;
+      }
+      .x13{
+        margin-left: 400px;
+        left:10px;
+        margin-top: 0%;
+      }
+      #contact {
+    padding: 50px;
+    background-color: #333;
+    color:aqua;
+  }
+  
+  #contact h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact label {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #contact input,
+  #contact textarea {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+  
+  #contact button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #contact button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  .uu{
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .hh{
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    padding: 2px;
+  }
+  .hidden{
+    display: none;
+  }
+  .ll{
+    background-color: #ccc;
+  }
+  .xc{
+background-color: #ccc;
+  }
+  .OT{
+    position: relative;
+    WIDTH:300PX;
+    
+    display: inline-block;
+    padding: 5px ;
+  margin-left: 30px;
+        }
+      
+        .CONTENT{
+          position: absolute;
+          DISPLAY:FLEX;
+          TOP:0;
+      
+          LEFT:0;
+          align-items: center;
+          justify-content: center;
+          OPACITY:0;
+          WIDTH:100%;
+          HEIGHT:100%;
+  
+  
+        }
+       
+      .CONTENT:HOVER{
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.6);
+        } 
+        .WW{
+          display: block;
+          WIDTH:100%;
+          border-radius: 20%;
+          }
+  .QQ{
+          display:inline-block;
+          margin-top: 10%;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <HEADER STYLE="background-color: black;">
+     
+          <ul class="menu-items">
+            <li><button class="on"><a href="hotel.html">Home</a></button></li>
+           
+            <li><button class="on"><a href="#rooms">BOOKINGS</a></button></li>
+            <li><button class="on"><a href="https://giholidays.makemytrip.com/holidays-india/">HOLIDAYS</a></button></li>
+           
+            <li><button class="on"><a href="#contact">Contact</a></button></li>
+            <li><button class="on"><a href="ratings.html">About</a></button></li>
+        </ul>
+
+        </HEADER>
+        
+
+  
+
+  <body>
+    <video id="myvideo-top" autoplay muted loop type="video/mp4">
+      <source src="  images/hotel video.mp4" />
+    </video>
+
+    <section id="rooms">
+      <font color="white"></font><h2 align="center" class="df">Room Booking</h2></font>
+      <form  method="post"id="sg">
+        <label for="check-in-date">Check-in Date:</label>
+        <input type="date" id="check-in-date" name="check-in-date" />
+        <label for="check-out-date">Check-out Date:</label>
+        <input type="date" id="check-out-date" name="check-out-date" />
+        <label for="room-type">Room Type:</label>
+        <select id="room-type" name="room-type">
+          <option value="standard">Standard</option>
+          <option value="deluxe">Deluxe</option>
+          <option value="suite">Suite</option>
+        </select>
+        <label for="num-guests">Number of Guests:</label>
+        <input type="number" id="num-guests" name="num-guests" />
+
+        <button type="submit" value="SUBMIT">Book Now</button>
+        
+      </form>
+      <div class="xc">
+      <div id="thank-you-message" class="hidden">
+        <font style="font-size:30px;"><h2 class="ll">Thank You for Booking!</h2>
+        <p class="kk">We have received your booking request and will be in touch shortly.</p></font>
+      </div>
+      </div>
+      <script>
+        // Add an event listener to the form submission
+        document
+          .querySelector("#sg")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // prevent the form from submitting
+  
+            // Here you can add your code to submit the form data via AJAX or fetch
+  
+            // Once the form is successfully submitted, show the thank you message
+            document.querySelector("#sg").classList.add("hidden");
+            document
+              .querySelector("#thank-you-message")
+              .classList.remove("hidden");
+          });
+      </script>
+  
+  
+    </section>
+
+    <video id="myvideo-bottom" autoplay muted loop type="video/mp4">
+      <source src="  images/hotel 2.mp4" />
+    </video>
+ 
+
+
+        </section>
+    
+                   
+                </DIV><DIV CLASS="QQ">
+           
+                  <DIV CLASS="OT">
+                  
+                    <IMG SRC="  images/royal hotel.webp"CLASS="WW"WIDTH="300px" HEIGHT="300PX"style="margin_left:10px;">
+                      <DIV CLASS="CONTENT">
+                        <P STYLE="COLOR:RED;">ROYAL HOTEL</P>
+                      </DIV>
+                  </DIV>
+          
+                      <DIV CLASS="OT">
+                  <IMG SRC="  images/beacon hotel.webp"CLASS="WW"WIDTH="300PX" HEIGHT="300PX"style="margin_left:10px;">
+                    <DIV CLASS="CONTENT">
+                      <P STYLE="COLOR:red;">BEACON HOTEL</P>
+                    </DIV>
+                      </DIV>
+                    <DIV CLASS="OT">
+                      <IMG SRC="  images/leafio hotel.webp"CLASS="WW"WIDTH="300PX" HEIGHT="300PX"style="margin_left:10px;">
+                        <DIV CLASS="CONTENT">
+                          <P STYLE="COLOR:red;">LEAFIO HOTEL</P>
+                        </DIV>
+                      </DIV>
+                      <DIV CLASS="OT">
+                  <IMG SRC="  images/ginger 2 mumbai.webp"CLASS="WW"WIDTH="300PX" HEIGHT="300PX">
+                    <DIV CLASS="CONTENT">
+                      <P STYLE="COLOR:RED;">GIGER HOTEL</P>
+                    </DIV>
+                         </DIV>
+                      </DIV>
+           
+        <!--
+        <section ID="IMAGES">
+    <div class="ff">
+      <a href="https://www.goibibo.com/hotels/royal-hotels-kodaikanal-hotel-in-delhi-8700726356927677841/?hquery={%22ci%22:%2220230427%22,%22co%22:%2220230428%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22}&cc=IN"><img src="  images/royal hotel.webp" class="dd" /></a>
+      <a href="https://www.goibibo.com/hotels/beacon-t2-mumbai-hotel-in-kodaikanal-7589768612146622195/?hquery={%22ci%22:%2220230427%22,%22co%22:%2220230428%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22}&cc=IN"><img src="  images/beacon hotel.webp" class="dd" /></a>
+      <a href="https://www.goibibo.com/hotels/regent-grand-hotel-in--127094967202402896/?hquery={%22ci%22:%2220230427%22,%22co%22:%2220230428%22,%22r%22:%221-2-0%22,%22ibp%22:%22v15%22}&hmd=ef51fd6bb3934cacb27f99fed9b039e2751002993b049fc8910d8f229235f0a4d1bd95587a32b22fb03484fc52dd91405f5b09c62e7e4cdf13b64290bd0de64a7639cc2583d7b3977c23342d6a87ebe6a62cf5fffc08f33add6b769963bf74ffc625bca499b2e0bc618d27f26e71f5657f79d8b1e18636a973dd8449d2e4c1d7e17f47ad6943cbcde6abd7b21bbc034728f89848bd07e8e72837179d214c65fba1de78f4ba6008b40f3f2d02fb59443766996fe9aac7a77167e0cec413b04e747d8f1c5f344e41b202f5e0af8f04abbda51a5800ba547d2dda190f1d304434ba8d2802e841c2fe313d8d75258700b9d1696313c691159c9b20ec41b2ea70fee18e93f5f9602378ae3d1b12177f3f1e3013e3ec911573c88c8bde4c86616d78c052ea27518b33b7d3746a2bd27837b7c9fd8c5b4fdeee2610e638d24006103614ba7e96f840019e4ea81361f2a521a7&cc=IN&reviewType=gi"><img src="  images/ginger 2 mumbai.webp" class="dd" /></a>
+      <a href="https://www.goibibo.com/hotels/leafio-marigold-mumbai-hotel-in-kodaikanal-4282116263052586546/?hquery={%22ci%22:%2220230427%22,%22co%22:%2220230428%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22}&cc=IN"><img src="  images/leafio hotel.webp" class="dd" /></a>
+
+    </div>-->
+    <div class="gg">
+        <A HREF="https://www.goibibo.com/hotels/royal-hotels-kodaikanal-hotel-in-delhi-8700726356927677841/?hquery={%22ci%22:%2220230427%22,%22co%22:%2220230428%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22}&cc=IN"><img src="  images/click.png" class="x1" style="float: left;"></A>
+      <A HREF="https://www.goibibo.com/hotels/beacon-t2-mumbai-hotel-in-kodaikanal-7589768612146622195/?hquery={%22ci%22:%2220230427%22,%22co%22:%2220230428%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22}&cc=IN"><img src="  images/click.png" class="x2" style="float: left;"></A>
+
+     <a href="https://www.goibibo.com/hotels/regent-grand-hotel-in--127094967202402896/?hquery=%7B%22ci%22:%2220230427%22,%22co%22:%2220230428%22,%22r%22:%221-2-0%22,%22ibp%22:%22v15%22%7D&hmd=ef51fd6bb3934cacb27f99fed9b039e2751002993b049fc8910d8f229235f0a4d1bd95587a32b22fb03484fc52dd91405f5b09c62e7e4cdf13b64290bd0de64a7639cc2583d7b3977c23342d6a87ebe6a62cf5fffc08f33add6b769963bf74ffc625bca499b2e0bc618d27f26e71f5657f79d8b1e18636a973dd8449d2e4c1d7e17f47ad6943cbcde6abd7b21bbc034728f89848bd07e8e72837179d214c65fba1de78f4ba6008b40f3f2d02fb59443766996fe9aac7a77167e0cec413b04e747d8f1c5f344e41b202f5e0af8f04abbda51a5800ba547d2dda190f1d304434ba8d2802e841c2fe313d8d75258700b9d1696313c691159c9b20ec41b2ea70fee18e93f5f9602378ae3d1b12177f3f1e3013e3ec911573c88c8bde4c86616d78c052ea27518b33b7d3746a2bd27837b7c9fd8c5b4fdeee2610e638d24006103614ba7e96f840019e4ea81361f2a521a7&cc=IN&reviewType=gi"><img src="  images/click.png" style="float: left;"class="x3"></a>
+     <A HREF="https://www.goibibo.com/hotels/leafio-marigold-mumbai-hotel-in-kodaikanal-4282116263052586546/?hquery=%7B%22ci%22:%2220230427%22,%22co%22:%2220230428%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22%7D&cc=IN"><img src="  images/click.png" class="x4" ></A>
+    </div>
+        </section>
+      
+      
+        <BR>
+        <section id="l">
+          <HEADER>
+            <FONT COLOR="GREY"><H1>POPULAR DESTINATIONS</H1></FONT>
+          </HEADER>
+          <DIV>
+           
+            
+            
+            <a href=""><img src="  images/chennai.jpg" class="er" /></a>
+            <a href=""><img src="  images/mumbai.jpg" class="er" /></a>
+            <a href=""><img src="  images/new dehli.jpg" class="er" /></a>
+</DIV>
+<DIV CLASS="PP">
+  <A HREF="" STYLE="FLOAT:LEFT"><H1 CLAss="x11">CHENNAI</H1></A>
+  <A HREF="" STYLE="FLOAT:LEFT"><H1 CLAss="x12">MUMBAI</H1></A>
+  <A HREF="" STYLE="FLOAT:LEFT"><H1 CLAss="x13">NEW DELHI</H1></A>
+
+</DIV>
+<DIV>
+            <a href=""><img src="  images/banglore.jpg" class="er" /></a>
+            <a href=""
+                ><img
+                  src="  images/hyderbad.jpg"class="er"
+                  style="align-items: center"/></a>
+</DIV>
+<DIV CLASS="PP">
+  <A HREF="" STYLE="FLOAT:LEFT"><H1 CLAss="x11">BANGLORE</H1></A>
+  <A HREF="" STYLE="FLOAT:LEFT"><H1 CLAss="x12">HYDERBAD</H1></A>
+  <A HREF="" STYLE="FLOAT:LEFT"><H1 CLAss="x13"></H1></A>
+
+</DIV>
+        
+          </section>
+          <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea>
+              <button type="submit">Send</button>
+              <br>
+              <div class="uu">
+              <img src="  images/windows.webp" class="hh">
+              <img src="  images/appstore.png"class="hh">
+              <img src="  images/windows.webp"class="hh">
+              </div>
+            </form>
+          </section>
+        </div>
+        
+
+  </body>
+</html>
+
+      
+

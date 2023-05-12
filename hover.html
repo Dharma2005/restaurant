@@ -1,0 +1,54 @@
+]<!DOCTYPE html>
+<html>
+  <head>
+    <title>LUNCH MENU</title>
+  </head>
+  <style>
+    .image {
+      position: relative;
+  WIDTH:400PX;
+    }
+    .pf {
+      display: block;
+      width: 30%;
+    }
+    .content {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0%;
+      left: 0%;
+      width: 30%;
+      height: 30%;
+      opacity: 0;
+    }
+    .content > * {
+      transition: transform 0.25s;
+    }
+
+    .content:hover {
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 1;
+    }
+    .content:hover > * {
+      transform: translateY(0);
+    }
+    font {
+      font-size: 50px;
+    }
+    </style>
+    <div class="image">
+   <img src="/html project/images/chennai.jpg" class="pf" />
+      <div class="content">
+        <font><p>chennai</p></font>
+      </div>
+    </div>
+    <div class="image">
+      <img src="/images/chennai.jpg" class="pf" />
+      <div class="content">
+        <font><p>chennai</p></font>
+      </div>
+    </div>
+  </body>
+</html>

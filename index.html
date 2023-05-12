@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      function matchpass() {
+        var firstpassword = document.f1.password.value;
+        var secondpassword = document.f1.password2.value;
+
+        if (firstpassword == secondpassword) {
+          window.location.href = "hotel.html"; // Redirect to the hotel home.html page
+          return true;
+        } else {
+          alert("Incorrect password!");
+          return false;
+        }
+      }
+    </script>
+
+    <style>
+      LABEL {
+        margin-left: 50px;
+        font-size: 20px;
+        color: antiquewhite;
+      }
+      body {
+        background-image: url(images/login\ image.jpg);
+      }
+      .vc {
+        max-width: 50%;
+        width: 100%;
+        padding: 20px 20px;
+        margin-top: 10%;
+      }
+      .er {
+        max-width: 50%;
+        height: 50%;
+      }
+      font {
+        background-color: chartreuse;
+      }
+      .bv {
+        color: aliceblue;
+        margin-top: 30px;
+        margin-left: 300px;
+        background-color: chartreuse;
+        background-color: transparent;
+        padding: 10px 10px;
+        width: 10%;
+      }
+      input {
+        background-color: transparent;
+        border-radius: 10px;
+        border-color: aqua;
+        color: white;
+        font-size: 20px;
+        margin-left: 150px;
+      }
+      ::placeholder {
+        color: antiquewhite;
+        font-size: 27px;
+      }
+      fieldset {
+        margin-left: 350px;
+        left: 10px;
+        margin-top: 10%;
+        border-radius: 20%;
+        border-color: aqua;
+      }
+
+      button {
+        border-radius: 10%;
+        font-size: 15px;
+        padding: 10px 10px;
+        border-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset class="er">
+      <form
+        class="bn"
+        name="f1"
+        action="hotel.html"
+        onsubmit="return matchpass()"
+      >
+        <input
+          type="name"
+          name=""
+          value=""
+          class="vc"
+          placeholder="Username"
+        /><br />
+
+        <input
+          type="password"
+          name=""
+          value=""
+          class="vc"
+          placeholder="password"
+        /><br />
+
+        <input
+          type="password"
+          name="password2"
+          class="vc"
+          placeholder="re-enter password"
+        /><br />
+        <button class="bv">submit</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
